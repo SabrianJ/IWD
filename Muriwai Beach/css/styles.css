@@ -1,0 +1,268 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+  background-color: #76b5c5;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+}
+
+@keyframes rightToLeft {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes color-change {
+  50% {
+    color: #023047;
+  }
+
+  100% {
+    color: #e76f51;
+  }
+}
+
+@keyframes bottomTop {
+  0% {
+    transform: translatex(500px) translatey(500px);
+    opacity: 1
+  }
+
+  100% {
+    transform: translatex(0px) translatey(0px);
+    opacity: 0
+  }
+}
+
+#titleDescription {
+  animation: color-change 3s infinite;
+  padding-left: 20%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat-Bold';
+}
+
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.container-fluid {
+  padding: 3% 15% 15%;
+}
+
+#homePicture {
+  transform: rotate(10deg);
+  position: relative;
+  width: 120%;
+  right: 1%;
+  animation-duration: 3s;
+  animation-name: rightToLeft;
+}
+
+#flyingBird {
+  position: relative;
+  animation-duration: 3s;
+  animation: bottomTop 3s infinite;
+  width: 70%;
+  opacity: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem 0;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  font-size: 5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+
+/* Title Image */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+}
+
+/* features */
+#features {
+  background-color: #fff;
+  padding: 7% 15%;
+  position: relative;
+}
+
+.features-icon {
+  color: #76b5c5;
+  margin-bottom: 1rem;
+}
+
+.features-icon:hover {
+  color: #023047;
+}
+
+.features-info {
+  color: #8f8f8f;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+/* Testiminials */
+#testimonials {
+  text-align: center;
+  background-color: #76b5c5;
+  color: #fff;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonial-test {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#press {
+  background-color: #76b5c5;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.copyright {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div.copyright:first-of-type {
+  animation: showup 7s infinite;
+}
+
+div.copyright:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+
+div.copyright:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+
+  20% {
+    margin-left: -800px;
+  }
+
+  35% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+
+  30% {
+    width: 355px;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+
+.social-icon {
+  margin: 20px 10px;
+}

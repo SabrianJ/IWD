@@ -1,0 +1,37 @@
+.firstParagraph{
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.secondParagraph{
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+h1{
+  color:rgba(255, 0, 0, 0.3);
+}
+
+h2{
+  color:rgba(255, 0, 0, 0.8);
+}
+
+body{
+  background: repeating-radial-gradient(#e66465, #9198e5 20%);
+}
+/* body::after {
+  content: "";
+  background: url(https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F1159979214%2FLake-Marian%2F960x0.jpg%3Ffit%3Dscale);
+  opacity: 0.5;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+} */
+
+img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}

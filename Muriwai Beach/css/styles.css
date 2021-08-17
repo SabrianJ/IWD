@@ -163,7 +163,10 @@ h3 {
 		display: flex;
 		flex-direction: column;
 		overflow: hidden;
-    animation: xfade 15s infinite;
+    animation-name: xfade ;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 	}
 
   @keyframes xfade{
@@ -174,7 +177,7 @@ h3 {
   75% {
     background: url('../images/muriwai2.jpg');
   }
-  99% {
+  100% {
     background: url('../images/muriwai3.jpg');
 
   }
@@ -195,7 +198,7 @@ h3 {
 		transform: translateX(-300px);
 		animation-duration: 10s;/*1sec actual*/
 		/*animation-direction: alternate;*/
-		animation-iteration-count: infinite;
+		animation-iteration-count: 1;
 		animation-fill-mode: forwards;
 		opacity: 0;
 	}
@@ -233,7 +236,7 @@ h3 {
 		transform: translateX(300px);
 		/*animation-delay: 3s; /*disappears at 7.5s*/
 		animation-duration: 10s;/*delay till 3sec/ 3.7sec full duration, actual duartion - 0.8s(21.6%)*//*disappears at 7.5s*/
-		animation-iteration-count: infinite;
+		animation-iteration-count: 1;
 		animation-fill-mode: forwards;
 		opacity: 0;
 	}
@@ -259,7 +262,7 @@ h3 {
 		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAvCAMAAACrOwigAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAJlQTFRFAAAAozEDhQAAnCUBskwFhQAAhQAAnCUB97YGlRsA97YGtVEEyWsF/sEI5p8FiwoAhQAA97YGiwoAhQAAozEDpzsFwmEF4JEFlRsAiwoA1oUI5qgHozEDmyQA4JEFtVEEtVEE0XoG0XoGnCUBy28FlRsA/sEI5p8FlRsApzsFskwFskwFskwFmyQAmyQApzsFmyQAwmEFiwoAcrO4gQAAADN0Uk5TAPX/9eHr9esY/xfr/////9j/4eH///9e4ev//+v///X///X///UYYuvr9f/r9eH16+v1gk5eCAAAAalJREFUeJyt1WtXgkAQBmB4bScxlo1ct4REDCu7X/7/j2uXhc06ksM5vZ8UH8dhzjJG0cHEmBz+4FBOBIHE6ZTJBZAAOJ2x9BkhlZkC8YrHgJTW0/kILlMIFhdIHM8VXXD4HNpxueCVF/ZOXQzE5XF9Rcg6zpmN6Hph8dmSULD5dIK+OKd3q1XZ8cVA9ZhcYvuKrM46Le0xWF7Hba5dm6HgXlZBV3tXiYRYrlu+j5XJey1r/ApNfHFfMIWqSzmUbJOAbly7uv/xzSB2KYHmB6/+5FIDY3gyittJaR7fGmMWdjYpjyd+krd3/GYq1T4t7N7rcdyfZzbXEPd8vgHtWNVL4+fY7oXjfNOdyAceb2OAxxFcAvEInoHGNNMvWB7PFebfPNvmg7ywY3xSwHPghX2o8yG+8mN8mQauVznSP5op7WN9HwVeqwZZhaYY8iasesfzWhd+DWlT5Qd4091oFO0IHqT9+mmettXPhbMFvUahPLRNY9fU225u/4G76BC7LPvi0eyVvCBx5t4/vwgKX+nXXdBus+7aDfz+feFjHfut7PP5cGTN/1O+ANxvRt7djPIHAAAAAElFTkSuQmCC');
 		margin-right: 9px;
 		animation-name: bannerLikeA;
-		animation-iteration-count: infinite;
+		animation-iteration-count: 1;
 		transform: translateY(300px);
 		animation-duration: 10s;
 		animation-fill-mode: forwards;
@@ -267,7 +270,7 @@ h3 {
 	}
 	.guaranteeLine{
 		animation-name: bannerGuaranteeLineA;
-		animation-iteration-count: infinite;
+		animation-iteration-count: 1;
 		transform: translateX(300px);
 		animation-duration: 10s;/*delay is 3 sec, actual duration 0.8s. disappears at 7 same way it appeared*/
 		animation-fill-mode: forwards;
@@ -301,12 +304,27 @@ h3 {
 		padding: 0;
 
 		animation-name: bannerfindOutMoreA;
-		animation-iteration-count: infinite;
+		animation-iteration-count: 1;
 		animation-duration: 10s;
 		animation-timing-function: ease-in-out;
 		animation-fill-mode: forwards;
 		opacity: 0;
 	}
+
+  .nameID{
+    animation-name: nameIDA;
+    animation-iteration-count: 1;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  @keyframes nameIDA{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
 	@keyframes bannerTopA {
 		0% {transform: translateX(-300px); opacity: 0;}
 		10% {transform: translateX(0px); opacity: 1;}

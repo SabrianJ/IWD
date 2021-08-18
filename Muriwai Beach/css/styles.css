@@ -557,3 +557,7 @@ div.copyright:last-of-type span {
 .social-icon {
   margin: 20px 10px;
 }
+
+.form-panel:not(.active) {
+    display:none;
+}

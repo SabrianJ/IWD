@@ -8,35 +8,17 @@ body {
   color: #fff;
 }
 
-@keyframes rightToLeft {
-  from {
-    margin-left: 100%;
-  }
-
-  to {
-    margin-left: 0%;
-  }
-}
-
 @keyframes color-change {
   50% {
     color: #023047;
   }
 
+  75%{
+    font-size: 3rem;
+  }
+
   100% {
     color: #e76f51;
-  }
-}
-
-@keyframes bottomTop {
-  0% {
-    transform: translatex(500px) translatey(500px);
-    opacity: 1
-  }
-
-  100% {
-    transform: translatex(0px) translatey(0px);
-    opacity: 0
   }
 }
 
@@ -136,12 +118,24 @@ h3 {
 }
 
 #homePicture {
-  transform: rotate(10deg);
   position: relative;
   width: 120%;
-  right: 1%;
   animation-duration: 3s;
-  animation-name: rightToLeft;
+  animation: rightToLeft 3s infinite ;
+}
+
+@keyframes rightToLeft {
+
+  0% {
+      transform: translatex(800px) translatey(0px);
+    opacity: 0
+  }
+
+  100% {
+    transform: translatex(0px) translatey(0px);
+    transform: rotate(10deg);
+    opacity: 1
+  }
 }
 
 #flyingBird {
@@ -150,6 +144,18 @@ h3 {
   animation: bottomTop 3s infinite;
   width: 70%;
   opacity: 0;
+}
+
+@keyframes bottomTop {
+  0% {
+    transform: translatex(500px) translatey(500px);
+    opacity: 1
+  }
+
+  100% {
+    transform: translatex(0px) translatey(0px);
+    opacity: 0
+  }
 }
 
 .bannerWrapper{
@@ -164,7 +170,7 @@ h3 {
 		flex-direction: column;
 		overflow: hidden;
     animation-name: xfade ;
-    animation-duration: 15s;
+    animation-duration: 10s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 	}
@@ -415,23 +421,6 @@ h3 {
   position: relative;
 }
 
-.features-icon {
-  color: #76b5c5;
-  margin-bottom: 1rem;
-}
-
-.features-icon:hover {
-  color: #023047;
-}
-
-.features-info {
-  color: #8f8f8f;
-}
-
-.feature-box {
-  text-align: center;
-  padding: 5%;
-}
 
 /* Testiminials */
 #testimonials {

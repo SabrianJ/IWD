@@ -38,10 +38,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="book.html">Book me</a>
+              <a class="nav-link" href="https://www.muriwai.co.nz/">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.muriwai.co.nz/">About</a>
+              <a class="nav-link" href="Wireframe.pdf" target="_blank">Wireframe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="HorizontalBanner.pdf" target="_blank">Horizontal Banner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="VerticalBanner.pdf" target="_blank">Vertical Banner</a>
             </li>
           </ul>
         </div>
@@ -50,7 +56,7 @@
 
 
       <!-- Title -->
-      <div class="row">
+      <div class="row horizontal-banner">
 
         <div class="col-lg-6">
           <img id="homePicture" src="images/homePicture.jpg" alt="home-picture">
@@ -71,42 +77,181 @@
 
           <img id="flyingBird" src="images/flyingBird.png" alt="flying-bird">
         </div>
+        <div class="nameID" id="nameID" style="color:#FFFFFF; text-align: center;">
+          Sabrian Jufenlindo Id: 1548517
+
+        </div>
       </div>
     </div>
 
   </section>
 
+  <section id="booking">
 
-  <!-- Features -->
+  <div class="container-fluid">
 
-  <section id="features">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="feature-box col-lg-4">
-          <h3><i class="fas fa-car features-icon fa-4x"></i>
-            <p>Easy to reach.</p>
-          </h3>
-          <p class="features-info">Just an hour from Auckland CBD.</p>
+    <div class="row">
+      <div class="col-lg-10">
+          <label for=".progress-bar" class="form-label">Progress bar</label>
+        <div class="progress">
+<div class="progress-bar" id="myProgressBar" role="progressbar" style="width: 25%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">25%</div>
+
+</div>
+
+<br><br><br>
+<div class="form-panel active">
+
+
+        <form class="firstStep" id="firstStep" autocomplete="off">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" >
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="abc@email.com">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+
+              <label for="numberOfAdults" class="form-label">Number of Adults</label>
+              <input type="number" class="form-control" id="numberOfAdults" size="30">
+              </div>
+              <div class="form-group col-md-3">
+              <label for="numberOfChildren" class="form-label">Number of Children</label>
+              <input type="number" class="form-control" id="numberOfChildren" size="30">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="dater" class="form-label">Please choose your date</label>
+              <input type="date" class="form-control" id="date" value="null">
+            </div>
+
+
+          <button  type="button" class="btn btn-primary" onclick="nextButtonClick()">Next</button>
+
+        </form>
         </div>
 
-        <div class="feature-box col-lg-4">
-          <h3><i class="fas fa-dove features-icon fa-4x"></i>
-            <p>Australian Gannets</p>
-          </h3>
-          <p class="features-info">Lots of Gannets !</p>
+<div class="form-panel">
+        <form class="secondStep" id="secondStep" autocomplete="off">
+          <div class="mb-3">
+            <label for="cookingFacilities" class="form-label">Do you need cooking facilities ?</label>
+            <select id="cookingFacilities" class="form-control">
+      <option selected>Yes</option>
+      <option>No</option>
+    </select>
+          </div>
+          <div class="mb-3 form-row">
+              <label for="form-check" class="form-label">Are you using camper van ?</label>
+            <div class="form-check" style="margin-left:20px;">
+              <input class="form-check-input" type="radio" name="isUsingCamperVan" value="yes" id="isUsingCamperVan" checked>
+              <label class="form-check-label" for="isUsingCamperVan">
+                Yes
+              </label>
+            </div>
+            <div class="form-check" style="margin-left:20px;">
+              <input class="form-check-input" type="radio" name="isUsingCamperVan" value="yes" id="notUsingCamperVan" >
+              <label class="form-check-label" for="notUsingCamperVan">
+                No
+              </label>
+            </div>
+
+</div>
+<div class="mb-3">
+<label for="equipments" class="form-label">What equipments that you need to use? (Leave blank if none)</label>
+<input type="text" class="form-control" id="equipments" value="" placeholder="Swimming goggles, surf board, etc" >
+</div>
+<div class="mb-3">
+<label for="color" class="form-label">As part of our psychological survey, please choose the appropiate color that attract you the most ?</label>
+<input type="color" class="form-control" id="color" value=""  >
+</div>
+<button type="button" class="btn btn-outline-primary" onclick="previousButtonClick()" >Previous</button>
+<button  type="button" class="btn btn-primary" onclick="nextButtonClick()">Next</button>
+
+        </form>
         </div>
+        <div class="form-panel">
+        <form class="thirdStep" id="thirdStep" autocomplete="off">
+          <div class="mb-3">
+            <label for="range" class="form-label">Please specify your overall experience while making this booking (1-5)</label>
+            <input type="range" class="form-range form-control" min="1" max="5" id="range">
+            <span  class="slider_label"></span>
+          </div>
+          <div class="mb-3">
+            <label for="userAgreement" class="form-label">Please read the following license agreeement carefully</label>
+            <textarea class="form-control " name="userAgreement" id="userAgreement"rows="8" cols="80" disabled>Muriwai Beach Local Native Conservation Initiative agreeement
 
+            You agree to conserve the nature of this Muriwai Beach.
 
-        <div class="feature-box col-lg-4">
-          <h3><i class="fas fa-heart features-icon fa-4x"></i>
-            <p>Beautiful place</p>
-          </h3>
-          <p class="features-info">Celebrate your important momment here</p>
+            </textarea>
+            <div class="form-check">
+<input class="form-check-input" type="checkbox" value="yes" id="agreeUserAgreement">
+<label class="form-check-label" for="agreeUserAgreement">
+  I accept the agreement
+</label>
+</div>
+          </div>
+          <button type="button" class="btn btn-outline-primary" onclick="previousButtonClick()" >Previous</button>
+          <button  type="button" class="btn btn-primary" onclick="nextButtonClick()">Next</button>
+        </form>
         </div>
+        <div class="form-panel">
+        <form class="fourthStep" id="fourthStep" autocomplete="off">
+          <label class="form-label" id="summary"><strong><u>Summary</u></strong></label><br/>
+          <label class="form-label" id="summaryName"></label><br/>
+          <label class="form-label" id="summaryEmail"></label><br/>
+          <label class="form-label" id="summaryNumberOfAdults"></label><br/>
+          <label class="form-label" id="summaryNumberOfChildren"></label><br/>
+          <label class="form-label" id="summaryDate"></label><br/>
+          <label class="form-label" id="summaryNeedCookingFacilities"></label><br/>
+          <label class="form-label" id="summaryIsUsingCampervan"></label><br/>
+          <label class="form-label" id="summaryEquipments"></label><br/>
+          <label class="form-label" id="summaryColor"></label><br/>
+          <label class="form-label" id="summaryRange"></label><br/>
+          <label class="form-label" id="summaryAgreeUserAgreement"></label><br/>
+          <button type="button" class="btn btn-outline-primary" onclick="previousButtonClick()" >Previous</button>
+          <button  type="button" class="btn btn-primary" onclick="validationCheck()">Submit</button>
+        </form>
+        </div>
+      </div>
+      <div class="col-lg-2 vertical-banner" id="advertisement">
+        <a href="https://www.muriwai.co.nz/" target="_blank">
+          <div class="bannerWrapper banner" id="bannerWrapper">
+            <div class="bannerTop" id="bannerTop">
+              <div>Muriwai </div>
+              <div><span class="bold">Beach</span></div>
+              <div>New Zealand</div>
+            </div>
+            <div class="bannerTopSub" id="bannerTopSub">
+              <div>
+                <span>-10%</span> <br>Tickets
+              </div>
+            </div>
+            <div class="bannerGuarantee" id="bannerGuarantee">
+              <div class="bannerLike" id="bannerLike"></div>
+              <span>
+                <div class="guaranteeLine">Customer </div>
+                <div class="guaranteeLine">Satisfaction </div>
+                <div class="guaranteeLine">Guarantee</div>
+              </span>
+            </div>
+            <div class="bannerBottom" id="bannerBottom">
+              <button class="findOutMore">Find Out More</button>
 
+            </div>
+            <div class="nameID" id="nameID" style="color:#FFFFFF; text-align: center;">
+              Sabrian Jufenlindo Id: 1548517
+
+            </div>
+          </div>
+        </a>
+        <button class="replayButton" id="replayButton" onclick="replayAnimation()">Replay</button>
       </div>
     </div>
 
+  </div>
   </section>
 
 

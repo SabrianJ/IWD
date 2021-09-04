@@ -281,6 +281,7 @@ h3 {
 		animation-duration: 10s;/*delay is 3 sec, actual duration 0.8s. disappears at 7 same way it appeared*/
 		animation-fill-mode: forwards;
 		opacity: 0;
+    
 	}
 	.guaranteeLine:nth-child(1){
 		animation-delay: 0.15s;
@@ -335,9 +336,9 @@ h3 {
 		0% {transform: translateX(-300px); opacity: 0;}
 		10% {transform: translateX(0px); opacity: 1;}
     30% {color: #ee8248;}
-    50% {color: #7F00FF;}
+    50% {color: #FFFF00;}
     70% {color:  #F4F5FF;}
-		90% {transform: translateX(0px); opacity: 1;color: #023047;}
+		90% {transform: translateX(0px); opacity: 1;color: #C0FFFF;}
 		100% {transform: translateX(-300px); opacity: 0;}
 	}
 	@keyframes bannerTopSubA {
